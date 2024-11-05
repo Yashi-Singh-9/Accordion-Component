@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefdfb;
+  color: #0e1c4e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header h2 {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  max-width: 266px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin: 20px auto;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Apply styles to the first item */
+.accordion-item:nth-child(2) > .accordion-header,
+.accordion-item:nth-child(2) > .accordion-content {
+  border-left: 4px solid #fb923c;
+  background-color: #ffedd5;
+}
+
+/* Apply styles to the second item */
+.accordion-item:nth-child(3) > .accordion-header,
+.accordion-item:nth-child(3) > .accordion-content {
+  border-left: 4px solid #818cf8;
+  background-color: #e0e7ff;
+}
+
+.accordion-item:nth-child(4) > .accordion-header,
+.accordion-item:nth-child(4) > .accordion-content {
+  border-left: 4px solid #a78bfa;
+  background-color: #ede9fe;
+}
+
+.accordion-item:nth-child(5) > .accordion-header,
+.accordion-item:nth-child(5) > .accordion-content {
+  border-left: 4px solid #f472b6;
+  background-color: #fce7f3;
+}
+
+.accordion-item:nth-child(6) > .accordion-header,
+.accordion-item:nth-child(6) > .accordion-content {
+  border-left: 4px solid #4ade80;
+  background-color: #f0fdf4;
+}
+
+/* Style for accordion content */
+.accordion-header .icon {
+  transition: transform 0.3s;
+}
+
+.accordion-header.active .icon {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  padding: 0 20px 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.accordion-content.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  body {
+    height: auto;
+  }
+}
