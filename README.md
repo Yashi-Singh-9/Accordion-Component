@@ -40,6 +40,14 @@ The Accordion Component is a user interface (UI) element commonly used in web de
 
 3. **Open `index.html` in your browser to view the project.**
 
+## Screenshot
+
+![Accordion Component Screenshot](image.png)
+
+## Live Demo 
+
+Do check out Live Demo of [Accordion Component](https://accordion-component-frontendpro.netlify.app)
+
 ## Folder Structure
 
 ```
@@ -74,9 +82,7 @@ Simply open the `index.html` file in your preferred web browser. Clicking on eac
 - **Icons**: You can change the icons in `index.html` or use different Font Awesome icons by editing the `fa-plus` and `fa-times` classes in the JavaScript file.
 - **Content**: Modify the questions and answers in `index.html` to fit your specific FAQ content.
 
-## Screenshot
 
-![Accordion Component Screenshot](image.png)
 
 ## License
 This project is open-source and available under the MIT License.
