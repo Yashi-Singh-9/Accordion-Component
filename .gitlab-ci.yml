@@ -1,0 +1,12 @@
+image: node:16  # Optional: Use this image if you need Node.js; otherwise, use a simpler image like alpine
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - mkdir public  # Create a public directory for GitLab Pages to serve
+    - cp -r * public/  # Copy all files to the public directory
+  only:
+    - main  # Only deploy when changes are pushed to the main branch
