@@ -30,7 +30,7 @@ The Accordion Component is a user interface (UI) element commonly used in web de
 
 1. **Clone the repository:**
    ```bash
-   https://github.com/Yashi-Singh-9/Accordion-Component.git
+   git clone https://github.com/Yashi-Singh-9/Accordion-Component.git
    ```
 
 2. **Navigate into the project directory:**
